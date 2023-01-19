@@ -42,7 +42,7 @@ export default function App() {
           setLanguage={setLanguage}
           appInfoModal={setAppInfoModal}
         />
-        <Body />
+        <Body language={language} />
       </Container>
       <Footer appInfoModal={setAppInfoModal} />
       {InstallModal === true && (

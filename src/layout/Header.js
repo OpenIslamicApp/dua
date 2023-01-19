@@ -30,13 +30,13 @@ const Container = styled.header`
   font-weight: 900;
   color: var(--color-th);
   text-align: center;
-  position: sticky;
+  /* position: sticky;
   position: -webkit-sticky;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 100;
-  /* position: relative; */
+  position: relative;
   & > p {
     font-size: calc(9.5px + 1vmin);
   }

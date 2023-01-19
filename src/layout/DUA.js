@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import DuaContainer from "../components/DuaContainer";
 
 import regularAfterPrayer from "../data/dua/afterEvery.json";
 import FridayPrayer from "../data/dua/friday.json";
 import fajarMagribPrayer from "../data/dua/fajarMagrib.json";
 import allTime from "../data/dua/anytime.json";
+import DuaWithAButton from "../components/DuaWithAButton";
+import ButtonDua from "../components/ButtonDua";
 
 export default function DUA() {
   const [DAY, setDAY] = useState();
@@ -24,7 +25,7 @@ export default function DUA() {
         <>
           <h1>Friday Special:</h1>
           {React.Children.toArray(
-            FridayPrayer.map((dua) => <DuaContainer {...dua} />)
+            FridayPrayer.map((dua) => <DuaWithAButton {...dua} />)
           )}
         </>
       )}
@@ -38,7 +39,7 @@ export default function DUA() {
             :
           </h1>
           {React.Children.toArray(
-            fajarMagribPrayer.map((dua) => <DuaContainer {...dua} />)
+            fajarMagribPrayer.map((dua) => <DuaWithAButton {...dua} />)
           )}
         </>
       ) : (
@@ -46,10 +47,10 @@ export default function DUA() {
       )}
       <h1 className="dua_title">Regular After Farz Prayer:</h1>
       {React.Children.toArray(
-        regularAfterPrayer.map((dua) => <DuaContainer {...dua} />)
+        regularAfterPrayer.map((dua) => <DuaWithAButton {...dua} />)
       )}
       <h1 className="dua_title">All time:</h1>
-      {React.Children.toArray(allTime.map((dua) => <DuaContainer {...dua} />))}
+      {React.Children.toArray(allTime.map((dua) => <ButtonDua {...dua} />))}
     </Container>
   );
 }

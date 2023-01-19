@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function InstallButton({
   deferredPrompt,
   setDeferredPrompt,
-  closeModal
+  closeModal,
 }) {
   const handleClick = () => {
     deferredPrompt.prompt();
@@ -25,8 +25,8 @@ export default function InstallButton({
       <div className="modal__sc">
         <div className="modal_container">
           <h2 className="modal_container__title">
-            Install <em>Prayer Time </em> App to see time of prayer even when
-            you are offline.
+            Install <em>Dua </em> App to see time of prayer even when you are
+            offline.
           </h2>
 
           <div className="modal_container__button">
@@ -38,7 +38,7 @@ export default function InstallButton({
             </button>
             <button
               className="modal_container__button_close"
-              onClick={()=>closeModal(false)}
+              onClick={() => closeModal(false)}
             >
               Close
             </button>

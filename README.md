@@ -1,16 +1,16 @@
-# Prayer Time Calendar(previously Ramadan Calendar)
+# Dua App
 
-This project had started as a static Ramadan Calendar for Ramadan 2022 for Dhaka, Bangladesh (GMT+6) and only in the Bangla language.
-But now it has more almost all months in Dhaka Bangladesh (GMT+6) Times. And will start adding more areas of Bangladesh soon.
+This project had started as a part of Prayer Time App.
+But we believe it's need to be separated for more and more Dua will be added and we need to describe them and cross reference them with Shariyah.
 
-So feel free to contribute along the way. And add your time zone.
+So feel free to contribute along the way.
 
 ## Frontend
 
 - React.js
 - Styled-components
 - React-icons
-- React PWA template 
+- React PWA template
 
 ## Hosting
 
@@ -20,20 +20,20 @@ So feel free to contribute along the way. And add your time zone.
 
 1. Fork the repository
 2. Clone the forked repo to your local machine
-3. Run `npm i` or  `npm install` in the terminal to install all the dependencies
-4. Start the project  in your local server by running `npm start` in the terminal.
+3. Run `npm i` or `npm install` in the terminal to install all the dependencies
+4. Start the project in your local server by running `npm start` in the terminal.
 5. Do the necessary changes in the required files
-    - Write styles in [Styled-components](https://styled-components.com/)
-    - Others in appropriate languages
+   - Write styles in [Styled-components](https://styled-components.com/)
+   - Others in appropriate languages
 6. Create commit for every file change and
 7. Please follow the sticker guide in the comment for every commit:
-    - 💅 for any style change
-    - 🦄 for any asset change
-    - 🛠️ for any code change other than style
-    - 📕 for any data change in `.json` or `.md` files
-    - 🏷️ for adding a new file/folder
-    - 🧩 for any package addition
-    - 🪲[one of the above] for any bug fix
+   - 💅 for any style change
+   - 🦄 for any asset change
+   - 🛠️ for any code change other than style
+   - 📕 for any data change in `.json` or `.md` files
+   - 🏷️ for adding a new file/folder
+   - 🧩 for any package addition
+   - 🪲[one of the above] for any bug fix
 8. Raise a Pull request (don't forget to name it appropriately, and I would love the practice of describing changes in the comment section of the Pull Request) in the main [repository](https://github.com/OpenIslamicApp/prayer-time) for review.
 
 What's next? <br/>

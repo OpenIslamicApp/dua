@@ -8,7 +8,7 @@ import allTime from "../data/dua/anytime.json";
 import DuaWithAButton from "../components/DuaWithAButton";
 import ButtonDua from "../components/ButtonDua";
 
-export default function DUA() {
+export default function DUA({ language }) {
   const [DAY, setDAY] = useState();
   const [Hour, setHour] = useState();
 
@@ -25,7 +25,9 @@ export default function DUA() {
         <>
           <h1>Friday Special:</h1>
           {React.Children.toArray(
-            FridayPrayer.map((dua) => <DuaWithAButton {...dua} />)
+            FridayPrayer.map((dua) => (
+              <DuaWithAButton data={dua} language={language} />
+            ))
           )}
         </>
       )}
@@ -39,7 +41,9 @@ export default function DUA() {
             :
           </h1>
           {React.Children.toArray(
-            fajarMagribPrayer.map((dua) => <DuaWithAButton {...dua} />)
+            fajarMagribPrayer.map((dua) => (
+              <DuaWithAButton data={dua} language={language} />
+            ))
           )}
         </>
       ) : (
@@ -47,10 +51,14 @@ export default function DUA() {
       )}
       <h1 className="dua_title">Regular After Farz Prayer:</h1>
       {React.Children.toArray(
-        regularAfterPrayer.map((dua) => <DuaWithAButton {...dua} />)
+        regularAfterPrayer.map((dua) => (
+          <DuaWithAButton language={language} data={dua} />
+        ))
       )}
       <h1 className="dua_title">All time:</h1>
-      {React.Children.toArray(allTime.map((dua) => <ButtonDua {...dua} />))}
+      {React.Children.toArray(
+        allTime.map((dua) => <ButtonDua data={dua} language={language} />)
+      )}
     </Container>
   );
 }

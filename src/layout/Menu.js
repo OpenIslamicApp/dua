@@ -26,38 +26,6 @@ export default function Menu({
           <option value="english">English</option>
         </select>
       </div>
-      <div className="setting_container">
-        <label htmlFor="country">Country:</label>
-        <select
-          name="country"
-          id=""
-          value={country}
-          onChange={(e) => setCountry(e.target.value)}
-        >
-          <option value="bd">Bangladesh</option>
-        </select>
-      </div>
-
-      {/* states for Bangladesh */}
-      <>
-        {
-          {
-            bd: (
-              <div className="setting_container">
-                <label htmlFor="state">State:</label>
-                <select
-                  name="state"
-                  id=""
-                  value={state}
-                  onChange={(e) => setState(e.target.value)}
-                >
-                  <option value="dhaka">Dhaka</option>
-                </select>
-              </div>
-            ),
-          }[country]
-        }
-      </>
 
       <div className="setting_container">
         Click to see app{" "}

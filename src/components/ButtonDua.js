@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-export default function ButtonDua({ arabic, english, times }) {
+export default function ButtonDua({ data, language }) {
   const [Counter, setCounter] = useState(0);
 
   //   const audio = new Audio("/error.mp3");
@@ -22,12 +22,12 @@ export default function ButtonDua({ arabic, english, times }) {
             {Counter < 10 ? "0" : ""}
             {Counter}
           </span>
-          {times && times !== 0 ? times : <i>/&infin;</i>}
+          {data.times && data.times !== 0 ? data.times : <i>/&infin;</i>}
         </h2>
       </div>
       <div className="duaButton_container__text">
-        <h1 dir="rtl">{arabic}</h1>
-        <sub>{english} </sub>
+        <h1 dir="rtl">{data.arabic}</h1>
+        <sub>{data[language]} </sub>
       </div>
     </Container>
   );

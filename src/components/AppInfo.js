@@ -10,30 +10,28 @@ export default function AppInfo({ modalState, closeModal }) {
   const [Versions, setVersions] = useState();
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/OpenIslamicApp/prayer-time")
+    fetch("https://api.github.com/repos/OpenIslamicApp/dua")
       .then((response) => response.json())
       .then((data) => setRepoOverview(data))
       .catch((error) => {
         alert(error);
         console.log(error);
       });
-    fetch("https://api.github.com/repos/OpenIslamicApp/prayer-time/languages")
+    fetch("https://api.github.com/repos/OpenIslamicApp/dua/languages")
       .then((response) => response.json())
       .then((data) => setLinesOfCode(data.JavaScript + data.HTML + data.CSS))
       .catch((error) => {
         alert(error);
         console.log(error);
       });
-    fetch(
-      "https://api.github.com/repos/OpenIslamicApp/prayer-time/contributors"
-    )
+    fetch("https://api.github.com/repos/OpenIslamicApp/dua/contributors")
       .then((response) => response.json())
       .then((data) => setContributors(data))
       .catch((error) => {
         alert(error);
         console.log(error);
       });
-    fetch("https://api.github.com/repos/OpenIslamicApp/prayer-time/releases")
+    fetch("https://api.github.com/repos/OpenIslamicApp/dua/releases")
       .then((response) => response.json())
       .then((data) => setVersions(data))
       .catch((error) => {

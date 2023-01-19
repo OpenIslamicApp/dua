@@ -67,7 +67,12 @@ export default function AppInfo({ modalState, closeModal }) {
           </h2>
           <h2>Releases: {Versions && <span>{Versions.length}</span>}</h2>
           <h2>
-            Current Version: {Versions && <span>{Versions[0].name}</span>}
+            Current Version:{" "}
+            {Versions && Versions[0] ? (
+              <span>{Versions[0].name}</span>
+            ) : (
+              <span>No release yet</span>
+            )}
           </h2>
           <h2>Lines of code - {LinesOfCode && <span>{LinesOfCode}</span>}</h2>
           <h2>Contributors:</h2>

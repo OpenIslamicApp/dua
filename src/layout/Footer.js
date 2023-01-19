@@ -7,16 +7,13 @@ export default function Footer({ appInfoModal }) {
     <Container>
       By <a href="https://github.com/OpenIslamicApp/">OpenIslamicApp</a>,{" "}
       <a href="https://ahjim.com">Akhlak Hossain Jim</a>, and{" "}
-      <a href="https://github.com/OpenIslamicApp/prayer-time/graphs/contributors">
+      <a href="https://github.com/OpenIslamicApp/dua/graphs/contributors">
         contributors.
       </a>
       <br />
       Report a{" "}
-      <a href="https://github.com/OpenIslamicApp/prayer-time/issues">
-        problem
-      </a>{" "}
-      or <a href="https://github.com/OpenIslamicApp/prayer-time/">contribute</a>
-      .{" "}
+      <a href="https://github.com/OpenIslamicApp/dua/issues">problem</a> or{" "}
+      <a href="https://github.com/OpenIslamicApp/dua/">contribute</a>.{" "}
       <span onClick={() => appInfoModal(true)}>
         <BsFillInfoCircleFill />
       </span>
@@ -25,11 +22,6 @@ export default function Footer({ appInfoModal }) {
 }
 
 const Container = styled.footer`
-  /* position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
-  left: 0;
-  right: 0; */
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -40,7 +32,6 @@ const Container = styled.footer`
     content: "";
     position: absolute;
     height: 1px;
-    // background-color: var(--nav-bg);
     top: 0;
     left: 0;
     right: 0;
